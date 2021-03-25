@@ -29,7 +29,7 @@ class productController implements Controller {
         data: products,
       });
     } catch (err) {
-      res.status(201).json({
+      res.status(500).json({
         status: false,
         error: "Something went wrong",
       });
@@ -52,7 +52,7 @@ class productController implements Controller {
         data: product,
       });
     } catch (err) {
-      res.status(201).json({
+      res.status(500).json({
         status: false,
         error: "Something went wrong",
       });
